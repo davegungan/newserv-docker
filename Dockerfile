@@ -25,7 +25,8 @@ WORKDIR /home/newserv/newserv
 
 RUN ./configure -v && make && make install
 
-COPY ./newserv.conf /home/newserv/newserv/newserv.conf
+#COPY ./newserv.conf /home/newserv/newserv/newserv.conf
+COPY newserv.conf .
 
 CMD ["./newserv"]
 
