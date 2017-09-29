@@ -1,5 +1,4 @@
-FROM alpine
-#FROM ubuntu
+FROM ubuntu
 #FROM debian
 
 MAINTAINER Dave Gungan <gm at quakenet.org>
