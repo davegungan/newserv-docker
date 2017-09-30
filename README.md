@@ -1,2 +1,2 @@
 #     newserv-docker
-Quakenet's modular services in a Docker container.
+Quakenet's modular IRC services in a Docker container.
