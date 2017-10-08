@@ -1,5 +1,4 @@
 FROM ubuntu
-#FROM debian
 
 MAINTAINER Dave Gungan <gm at quakenet.org>
 
@@ -14,7 +13,7 @@ RUN apt-get update && apt-get install -y python flex bison libpcre3-dev liblua5.
 #tests
 #RUN apt-get install -y net-tools
 #RUN apt-get update && apt-get install -y irssi nano
-RUN echo "root:root" | chpasswd
+#RUN echo "root:root" | chpasswd
 
 WORKDIR /home/newserv
 USER newserv
@@ -25,7 +24,6 @@ WORKDIR /home/newserv/newserv
 
 RUN ./configure -v && make && make install
 
-#COPY ./newserv.conf /home/newserv/newserv/newserv.conf
 COPY newserv.conf .
 
 CMD ["./newserv"]
